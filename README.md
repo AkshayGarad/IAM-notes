@@ -73,3 +73,18 @@ Root users have full access to all AWS services and resources by default, while 
 have no access to any services or resources until specific permissions are granted to them. It's
 generally recommended to use IAM users for most tasks, rather than using the root user, to
 help ensure the security and integrity of your AWS account.
+
+## 13. In the IAM service, can we monitor the IAM user activity?
+Yes, you can monitor IAM user activity using AWS CloudTrail, which is a service that enables you to monitor and log all API calls made in your AWS account. With CloudTrail, you can track user activity across all AWS services, including the IAM service.
+
+When you enable CloudTrail in your AWS account, it starts logging API calls made to IAM, including actions taken by IAM users, roles, and policies. CloudTrail records the details of each API call, including the identity of the user who made the call, the time the call was made, the resources that were accessed, and the outcome of the call.
+
+You can use CloudTrail to monitor and audit IAM user activity, and to investigate security incidents or compliance issues. CloudTrail provides several features for analyzing and visualizing the data it logs, including:
+
+1. CloudTrail Insights: A feature that provides a set of predefined queries that help you identify security and operational issues in your AWS account.
+
+2. CloudTrail Event history: A searchable, filterable list of all CloudTrail events in your account.
+
+3. CloudTrail event log files: Raw log files that you can download and analyze using your own tools.
+
+By monitoring IAM user activity with CloudTrail, you can gain greater visibility into who is accessing your AWS resources, when they are doing it, and what they are doing. This can help you identify and respond to security incidents more quickly, and ensure compliance with your organization's policies and regulations.
