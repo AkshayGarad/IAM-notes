@@ -36,3 +36,25 @@ To rename an AWS customer IAM policy, you can follow these steps:
 8. Click on the "Save changes" button to save the policy with the new name.
 
 Once you've saved the policy with the new name, the policy's ARN (Amazon Resource Name) will remain the same. If you are referencing the policy by its ARN in other parts of your AWS infrastructure, you will need to update those references to reflect the new name.
+
+## 11. Why is IAM important?
+Here are some key reasons why Amazon Identity and Access Management (IAM) is
+important:
+1. IAM allows you to control access to your AWS resources. With IAM, you can create
+and manage users and groups, and grant them permissions to access specific AWS
+resources or actions. This allows you to control who has access to your resources, and
+what they can do with them.
+2. IAM helps you enforce the principle of least privilege. This means that you only grant
+users and applications the minimum permissions they need to perform their tasks, and
+no more. This helps to reduce the risk of unauthorized access to your resources, and to
+minimize the potential impact of security breaches.
+3. IAM integrates with other AWS services. Many AWS services, such as Amazon EC2
+and Amazon S3, support IAM authentication, so you can use IAM to control access to
+those services as well. This allows you to manage access to your entire AWS
+environment using a single, centralized service.
+4. IAM is flexible and scalable. IAM allows you to easily add or remove users and
+groups, and to adjust their permissions as needed. This makes it easy to manage
+access to your resources as your organization grows and changes.
+5. IAM is secure. IAM uses industry-standard encryption and authentication
+technologies to protect your resources, and provides a variety of security features,
+such as multi-factor authentication and password policies, to help you secure your
