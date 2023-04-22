@@ -109,3 +109,12 @@ IAM supports several authentication methods, including:
 4. Temporary security credentials: IAM allows users to access AWS resources using temporary security credentials, which are short-term credentials that are automatically rotated and expire after a configurable period.
 
 By controlling authentication through IAM, you can manage access to your AWS resources and enforce security best practices, such as requiring strong passwords and enabling MFA.
+
+## 15. What is Authorization in terms of AWS IAM service?
+In AWS IAM (Identity and Access Management) service, authorization refers to the process of determining whether an authenticated principal (a user or application) has the necessary permissions to perform a requested action on a specific AWS resource.
+
+Authorization is achieved through the use of IAM policies, which are attached to AWS resources or IAM identities (users, groups, or roles). IAM policies define permissions using a set of rules that allow or deny access to specific actions on AWS resources.
+
+When an IAM principal attempts to access an AWS resource, AWS evaluates the applicable policies and determines whether the principal has the necessary permissions to perform the requested action. If the principal has the required permissions, the action is allowed. If not, the action is denied, and an error message is returned.
+
+By using authorization policies, IAM provides a powerful and flexible way to control access to AWS resources, allowing organizations to ensure that only authorized users and applications can access sensitive data and perform critical operations.
