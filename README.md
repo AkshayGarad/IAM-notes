@@ -58,3 +58,18 @@ access to your resources as your organization grows and changes.
 5. IAM is secure. IAM uses industry-standard encryption and authentication
 technologies to protect your resources, and provides a variety of security features,
 such as multi-factor authentication and password policies, to help you secure your
+
+## 12. Are root users and IAM users the same?
+No, AWS root users and IAM users are not the same. AWS root users are the original users
+of an AWS account, with full access to all AWS services and resources in the account. Root
+users are created when an AWS account is first created, and the email address and password
+for the root user are used to sign in to the AWS Management Console.
+In contrast, IAM users are separate users that can be created and managed within an AWS
+account. IAM users are typically used to give individuals or applications access to specific
+AWS services and resources in the account. IAM users are managed through the IAM
+service, and they can be granted different levels of access to the AWS resources in the
+account through the use of IAM policies.
+Root users have full access to all AWS services and resources by default, while IAM users
+have no access to any services or resources until specific permissions are granted to them. It's
+generally recommended to use IAM users for most tasks, rather than using the root user, to
+help ensure the security and integrity of your AWS account.
