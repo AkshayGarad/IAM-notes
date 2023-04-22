@@ -88,3 +88,24 @@ You can use CloudTrail to monitor and audit IAM user activity, and to investigat
 3. CloudTrail event log files: Raw log files that you can download and analyze using your own tools.
 
 By monitoring IAM user activity with CloudTrail, you can gain greater visibility into who is accessing your AWS resources, when they are doing it, and what they are doing. This can help you identify and respond to security incidents more quickly, and ensure compliance with your organization's policies and regulations.
+
+## 14. How authentication is controlled in the IAM service?
+Authentication in the AWS Identity and Access Management (IAM) service is controlled through a combination of user credentials, policies, and identity providers.
+
+1. User credentials: IAM allows you to create and manage user accounts for your AWS resources. Each user is assigned a set of credentials, consisting of a username and password, access keys, or multi-factor authentication (MFA) devices.
+
+2. Policies: IAM policies are used to define permissions for users and other AWS identities (such as roles and groups). Policies are attached to users or resources to specify what actions they are allowed or denied to perform on AWS resources.
+
+3. Identity providers: IAM supports federated authentication, which enables users to authenticate with an external identity provider (such as Active Directory or an LDAP server) to access AWS resources. IAM also supports web identity federation, which allows users to sign in to an application using their existing social media or corporate credentials, and then access AWS resources using temporary security credentials.
+
+IAM supports several authentication methods, including:
+
+1. Username and password authentication: IAM allows users to authenticate using a username and password. IAM supports password policies to enforce strong password requirements and can be integrated with third-party authentication providers.
+
+2. Access keys: IAM allows users to authenticate using access keys, which are long-term credentials that enable programmatic access to AWS resources.
+
+3. Multi-factor authentication (MFA): IAM allows users to enable MFA on their accounts, which requires users to provide a second factor of authentication (such as a physical token or SMS message) in addition to their password.
+
+4. Temporary security credentials: IAM allows users to access AWS resources using temporary security credentials, which are short-term credentials that are automatically rotated and expire after a configurable period.
+
+By controlling authentication through IAM, you can manage access to your AWS resources and enforce security best practices, such as requiring strong passwords and enabling MFA.
